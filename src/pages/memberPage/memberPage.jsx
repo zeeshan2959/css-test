@@ -29,11 +29,11 @@ const MemberPage = () => {
         </div>
       </div>
       <div className='flex flex-col sm:flex-row justify-between sm:items-center gap-y-4 sm:gap-y-0 py-4'>
-        <Button text="등록" classes="px-[30px] py-[10px] rounded-[10px] bg-[#2A3958] text-[#FFFFFF] order-2 sm:order-1" onclick={() => setModalVisible(!modalVisible)} />
+        <Button text="등록" classes="px-[30px] py-[10px] rounded-[10px] bg-[#2A3958] text-[#FFFFFF] order-2 sm:order-1" />
         <div className='flex items-center gap-1 order-1 sm:order-2'>
-          <Button text="선택한 0건" classes="px-[10px] py-[10px] rounded-[10px] text-[#5A616A]" />
+          <Button text="선택한 0건" classes="px-[10px] py-[10px] rounded-[10px] text-[#5A616A]" onclick={() => setModalVisible(!modalVisible)}/>
           <Dropdown heading="신청일시순" options={options1} />
-          <Button text="저장" classes="px-[30px] py-[10px] rounded-[10px] bg-[#2A3958] text-[#FFFFFF]" onclick={() => setModalVisible(!modalVisible)}/>
+          <Button text="저장" classes="px-[30px] py-[10px] rounded-[10px] bg-[#2A3958] text-[#FFFFFF]"/>
         </div>
       </div>
       <MemberTable />
