@@ -128,7 +128,6 @@ const PaginationNav1Presentation = () => {
     };
   }, []);
 
-  const visiblePageButtonCount = isMobile ? 3 : 5;
 
   return (
     <div className="flex justify-center gap-3 flex-wrap p-6 py-6">

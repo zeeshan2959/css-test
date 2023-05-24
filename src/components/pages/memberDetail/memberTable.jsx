@@ -32,7 +32,7 @@ const MemberTable = () => {
                 <tbody>
                     {tableData.map((item, index) => {
                         return (
-                            <tr key={index} className={`${index % 2 == 0 ? "bg-[#FFFFFF]" : "bg-[#F9F9FB]"}`}>
+                            <tr key={index} className={`${index % 2 === 0 ? "bg-[#FFFFFF]" : "bg-[#F9F9FB]"}`}>
                                 <th className="px-2 py-2 text-center">
                                     <input type="checkbox" className="accent-white h-4 w-4" />
                                 </th>
