@@ -1,0 +1,23 @@
+.scroll-custom{
+    height: 100vh;
+    overflow-y: auto;
+}
+/* width */
+.scroll-custom::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .scroll-custom::-webkit-scrollbar-track {
+    background: #E6E8EA; 
+  }
+   
+  /* Handle */
+  .scroll-custom::-webkit-scrollbar-thumb {
+    background: #6F80A0;
+  }
+  
+  /* Handle on hover */
+  .scroll-custom::-webkit-scrollbar-thumb:hover {
+    background: #6F80A0; 
+  }

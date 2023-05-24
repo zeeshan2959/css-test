@@ -1,0 +1,24 @@
+.table-scroll-custom{
+    width: 100%;
+    overflow-x: auto;
+}
+/* width */
+.table-scroll-custom::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  /* Track */
+  .table-scroll-custom::-webkit-scrollbar-track {
+    background: #E6E8EA; 
+  }
+   
+  /* Handle */
+  .table-scroll-custom::-webkit-scrollbar-thumb {
+    background: #6F80A0;
+    border-radius:10px;
+  }
+  
+  /* Handle on hover */
+  .table-scroll-custom::-webkit-scrollbar-thumb:hover {
+    background: #6F80A0; 
+  }
