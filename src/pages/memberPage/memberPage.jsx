@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import NavBar from '../../components/common/navBar/navBar'
-import Heading from '../../components/pages/memberDetail/heading'
 import Dropdown from '../../components/form/dropdown/dropdown'
 import Button from '../../components/common/button/button'
 import MemberTable from '../../components/pages/memberDetail/memberTable'
@@ -17,9 +15,8 @@ const MemberPage = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
-    <div className='px-4 scroll-custom'>
-      <Heading />
-      <NavBar />
+    <div className=''>
+      
       <div className='flex flex-col lg:flex-row justify-between gap-y-4 lg:gap-y-0 lg:items-center border-b border-[#D7D8DA] pb-3 mt-12'>
         <div className='flex items-center gap-3'>
           <span className='text-xl text-[#0B101A] font-semibold'>신청 목록</span>
