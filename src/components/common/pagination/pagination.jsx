@@ -56,7 +56,7 @@ function PaginationNav1({
         />
       </li>
     ));
-  }, [pageCount, pageIndex]);
+  }, [pageCount, pageIndex,gotoPage]);
 
   return (
     <ul className="flex gap-2">
@@ -105,23 +105,20 @@ function PaginationNav1({
 
 const PaginationNav1Presentation = () => {
   const [pageIndex, setPageIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
   const [pageCount, setPageCount] = useState(10);
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 768) {
-        setIsMobile(true);
         setPageCount(3);
       } else {
-        setIsMobile(false);
         setPageCount(10);
       }
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Set initial value based on screen width
+    handleResize();
 
     return () => {
       window.removeEventListener('resize', handleResize);
